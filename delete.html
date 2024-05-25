@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Database</title>
+    <style>
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100vw;
+}
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+input {
+  width: 100%;
+}
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 2px solid red;
+  border-radius: 4px;
+}
+input[type=text]:focus {
+  border: 3px solid #555;
+}
+    </style>
+</head>
+<body>
+
+      <div>
+        <form action="delete.php" method="post">
+            <select id="column" name="column" >
+                <option value="srno">Srno</option>
+                <option value="student_name">Student Name</option>
+                <option value="father_name">Father Name</option>
+                <option value="mother_name">Mother Name</option>
+                <option value="dob">Date of Birth</option>
+                <option value="transport">Tranport</option>
+                <option value="contact">Contact</option>
+                <option value="student_address">Student Address</option>
+              </select>
+    
+          <label for="value">Value</label>
+          <input type="text" id="value" name="value" placeholder="value.." required>
+        
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Database</title>
+    <style>
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100vw;
+}
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+input {
+  width: 100%;
+}
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 2px solid red;
+  border-radius: 4px;
+}
+input[type=text]:focus {
+  border: 3px solid #555;
+}
+    </style>
+</head>
+<body>
+
+      <div>
+        <form action="insert.php" method="post">
+          <label for="srno">Srno</label>
+          <input type="text" id="srno" name="srno" placeholder="Srno.."  required focused> 
+
+          <label for="student">Student_name</label>
+          <input type="text" id="student" name="student_name" placeholder="Student name.." required>
+      
+          <label for="father">Father Name</label>
+          <input type="text" id="father" name="father_name" placeholder="Father name.." required>
+      
+          <label for="mother">Mother Name</label>
+          <input type="text" id="mother" name="mother_name" placeholder="Mother name.." required>
+
+          <label for="dob">Date of Birth</label>
+          <input type="text" id="dob" name="dob" placeholder="Date of birth.." required>
+      
+          <label for="address">Student Address</label>
+          <input type="text" id="address" name="student_address" placeholder="Student Address.." required>
+
+          <label for="contact">contact</label>
+          <input type="text" id="contact" name="contact" placeholder="Contact.." required>
+      
+          <label for="transport">Transport</label>
+          <input type="text" id="transport" name="transport" placeholder="Transport.." required>
+        
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+</body>
+</html>
